@@ -60,7 +60,25 @@ pip install pyinstaller
 ### Step 2: Build the App
 
 ```bash
-pyinstaller --noconfirm --onefile --windowed main.py
+pyinstaller --noconfirm --onefile --windowed GUI_tool.py
+```
+
+This will generate a standalone app inside the `dist/` folder.
+
+
+### Step 3: Install the Spec
+
+```bash
+pyinstaller GUI_tool.py
+```
+
+This will generate a standalone app inside the `dist/` folder.
+
+
+### Step 4: Build the Spec
+
+```bash
+pyinstaller GUI_tool.spec
 ```
 
 This will generate a standalone app inside the `dist/` folder.
@@ -103,7 +121,8 @@ chmod +x dist/main
 ├── main.py                # Main GUI application
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Documentation
-└── dist/                  # Folder where PyInstaller outputs the final app
+└── dist/                  # Folder where PyInstaller outputs the final Tool
+ └── GUI_tool/             
 ```
 
 ---
