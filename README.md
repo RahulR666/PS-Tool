@@ -40,10 +40,10 @@ pip install -r requirements.txt
 Simply launch the GUI with:
 
 ```bash
-python main.py
+python3 GUI_tool.py
 ```
 
-Make sure `main.py` contains your full application code.
+Make sure `GUI_tool.py` contains your full application code.
 
 ---
 
@@ -89,27 +89,27 @@ This will generate a standalone app inside the `dist/` folder.
 
 ###  Windows
 
-- Output: `dist/main.exe`
+- Output: `dist/GUI_tool/GUI_tool.exe`
 - Run by double-clicking the `.exe` file
 - Automatically runs as a GUI without terminal popups
 
 ###  macOS
 
-- Output: `dist/main`
-- Run with: `./main` or bundle it into a `.app` with additional flags
+- Output: `dist/GUI_tool/GUI_tool`
+- Run with: `./GUI_tool` or bundle it into a `.app` with additional flags
 
 Optional: To create a native `.app` format:
 ```bash
-pyinstaller --noconfirm --windowed --onefile --name "DeepTerrainTool" main.py
+pyinstaller --noconfirm --windowed --onefile --name "<Tool_Name>" GUI_tool.py
 ```
 
 ###  Linux
 
-- Output: `dist/main`
+- Output: `dist/GUI_tool/GUI_tool`
 - Make it executable:
 ```bash
-chmod +x dist/main
-./dist/main
+chmod +x dist/GUI_tool/GUI_tool
+./dist/GUI_tool/GUI_tool
 ```
 
 ---
@@ -118,7 +118,7 @@ chmod +x dist/main
 
 ```
 .
-├── main.py                # Main GUI application
+├── GUI_tool.py            # Main GUI application
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Documentation
 └── dist/                  # Folder where PyInstaller outputs the final Tool
