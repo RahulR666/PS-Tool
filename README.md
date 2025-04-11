@@ -1,19 +1,19 @@
-# 🖼️ Deep Terrain AI PS-Tool
+#  Deep Terrain AI PS-Tool
 
 A robust desktop GUI tool for pre-selecting and labeling images with scene-based attributes. Built with Python and Tkinter, this app streamlines the process of image selection, categorization, and dataset generation.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔍 Zoom and drag to explore images
-- 🌙 Dark/Light mode toggle
-- 🧬 Attribute tagging (class, action, accessories, age, gender, distance, time, occlusion)
-- ✅ Empty Frame disables irrelevant fields automatically
-- 📁 Folder navigation with search
-- 🗂️ Auto CSV logging and undo support
-- 💾 Save selections with metadata for dataset preparation
-- 🔐 Overwrite confirmation for already-selected images
+-  Zoom and drag to explore images
+-  Dark/Light mode toggle
+-  Attribute tagging (class, action, accessories, age, gender, distance, time, occlusion)
+-  Empty Frame disables irrelevant fields automatically
+-  Folder navigation with search
+-  Auto CSV logging and undo support
+-  Save selections with metadata for dataset preparation
+-  Overwrite confirmation for already-selected images
 
 ---
 
@@ -24,7 +24,7 @@ A robust desktop GUI tool for pre-selecting and labeling images with scene-based
 
 ---
 
-## 📦 Installation
+##  Installation
 
 1. **Clone or Download** this repository.
 2. **Install dependencies** via:
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶️ Running the Application
+## ▶ Running the Application
 
 Simply launch the GUI with:
 
@@ -69,13 +69,13 @@ This will generate a standalone app inside the `dist/` folder.
 
 ## 🖥️ Platform Packaging Notes
 
-### ✅ Windows
+###  Windows
 
 - Output: `dist/main.exe`
 - Run by double-clicking the `.exe` file
 - Automatically runs as a GUI without terminal popups
 
-### 🍎 macOS
+###  macOS
 
 - Output: `dist/main`
 - Run with: `./main` or bundle it into a `.app` with additional flags
@@ -85,7 +85,7 @@ Optional: To create a native `.app` format:
 pyinstaller --noconfirm --windowed --onefile --name "DeepTerrainTool" main.py
 ```
 
-### 🐧 Linux
+###  Linux
 
 - Output: `dist/main`
 - Make it executable:
@@ -96,7 +96,7 @@ chmod +x dist/main
 
 ---
 
-## 🧪 Project Structure
+##  Project Structure
 
 ```
 .
@@ -108,20 +108,14 @@ chmod +x dist/main
 
 ---
 
-## 📃 License
-
-This project is licensed under the **MIT License** — use it freely and modify as needed.
-
----
-
-## 🤝 Contributions
+##  Contributions
 
 Feel free to report issues, request features, or open PRs!
 
 ---
 
-## ❤️ Built With
+## ❤Built With
 
-- Python 🐍
-- Tkinter 🎨
-- PIL (Pillow) 🖼️
+- Python 
+- Tkinter 
+- PIL (Pillow) 
