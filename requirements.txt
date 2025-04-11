@@ -1,0 +1,9 @@
+# Minimum Python version required
+python_version >= 3.8
+
+# Required libraries
+Pillow>=9.0.0
+
+# Optional (for development and packaging)
+pyinstaller>=5.0
+black>=22.0
