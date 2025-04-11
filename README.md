@@ -114,7 +114,7 @@ Feel free to report issues, request features, or open PRs!
 
 ---
 
-## ❤Built With
+## Built With
 
 - Python 
 - Tkinter 
