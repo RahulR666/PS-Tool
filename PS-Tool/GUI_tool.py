@@ -77,10 +77,10 @@ class FolderNavigator:
             new_path = os.path.join(self.current_path, selection)
 
         if os.path.exists(new_path) and os.path.isdir(new_path):
-            # 👇 Call the main app's folder load method
+            #  Call the main app's folder load method
             self.on_folder_change(new_path)
 
-            # 👇 Update sidebar list to reflect new folder
+            #  Update sidebar list to reflect new folder
             self.load(new_path)
 
 
@@ -860,7 +860,7 @@ class ImageSelectorGUI:
         # Canvas background
         self.canvas.configure(bg=canvas_color)
 
-        # ✨ Attribute panel itself
+        #  Attribute panel itself
         self.attribute_frame.configure(
             bg=bg,
             fg=fg,
@@ -870,7 +870,7 @@ class ImageSelectorGUI:
             relief=tk.GROOVE
         )
 
-        # ✨ Theme all children inside the attribute panel
+        #  Theme all children inside the attribute panel
         for child in self.attribute_frame.winfo_children():
             if isinstance(child, (tk.Label, tk.Checkbutton)):
                 child.configure(bg=bg, fg=fg)
