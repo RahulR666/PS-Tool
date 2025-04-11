@@ -19,7 +19,7 @@ A standalone image selection and labeling tool for deep terrain AI projects, des
 1. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt //
 
 2. Run the Application
 
@@ -27,15 +27,12 @@ pip install -r requirements.txt
 python GUI_tool.py
 
 
----
-
-### 3. Project File Suggestions
+3. Project File Suggestions
 
 Save your current GUI code as `main.py`.
 
----
 
-### 4. Build Command Reminder
+4. Build Command Reminder
 
 To build:
 
