@@ -26,6 +26,6 @@ A powerful desktop GUI tool for selecting and labeling images with attributes fo
 Install required packages:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt ```
 
----
+
