@@ -17,7 +17,7 @@ A robust desktop GUI tool for pre-selecting and labeling images with scene-based
 
 ---
 
-## 🛠 Requirements
+## Requirements
 
 - Python 3.7 or newer
 - `pip` (Python package manager)
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 ---
 
-## ▶ Running the Application
+##  Running the Application
 
 Simply launch the GUI with:
 
@@ -47,7 +47,7 @@ Make sure `main.py` contains your full application code.
 
 ---
 
-## 🛠 Packaging for Desktop (Executable)
+##  Packaging for Desktop (Executable)
 
 You can build standalone executables using **PyInstaller**:
 
@@ -67,7 +67,7 @@ This will generate a standalone app inside the `dist/` folder.
 
 ---
 
-## 🖥️ Platform Packaging Notes
+##  Platform Packaging Notes
 
 ###  Windows
 
