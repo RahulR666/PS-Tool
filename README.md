@@ -20,3 +20,25 @@ A standalone image selection and labeling tool for deep terrain AI projects, des
 
 ```bash
 pip install -r requirements.txt
+
+2. Run the Application
+
+```bash
+python GUI_tool.py
+
+
+---
+
+### 3. Project File Suggestions
+
+Save your current GUI code as `main.py`.
+
+---
+
+### 4. Build Command Reminder
+
+To build:
+
+```bash
+pyinstaller --noconfirm --onefile --windowed main.py
+
