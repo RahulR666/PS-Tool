@@ -70,8 +70,7 @@ pyinstaller GUI_tool.py \
 
 ---
 
-
-
+```
 ##  Platform Packaging Notes
 
 ###  Windows
@@ -89,14 +88,13 @@ Optional: To create a native `.app` format:
 ```bash
 pyinstaller --noconfirm --windowed --onefile --name "<Tool_Name>" GUI_tool.py
 ```
-
 ###  Linux
 
 - Output: `dist/GUI_tool/GUI_tool`
 - Make it executable:
 ```bash
-chmod +x dist/GUI_tool/GUI_tool
-./dist/GUI_tool/GUI_tool
+chmod +x dist/GUI_tool
+./dist/GUI_tool
 ```
 
 ---
@@ -109,7 +107,7 @@ chmod +x dist/GUI_tool/GUI_tool
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Documentation
 └── dist/                  # Folder where PyInstaller outputs the final Tool
- └── GUI_tool/             
+ └── GUI_tool           
 ```
 
 ---
