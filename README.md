@@ -60,28 +60,13 @@ pip install pyinstaller
 ### Step 2: Build the App
 
 ```bash
-pyinstaller --noconfirm --onefile --windowed GUI_tool.py
-```
-
-This will generate a standalone app inside the `dist/` folder.
-
-
-### Step 3: Install the Spec
-
-```bash
-pyinstaller GUI_tool.py
-```
-
-This will generate a standalone app inside the `dist/` folder.
-
-
-### Step 4: Build the Spec
-
-```bash
-pyinstaller GUI_tool.spec
-```
-
-This will generate a standalone app inside the `dist/` folder.
+pyinstaller GUI_tool.py \
+  --noconfirm \
+  --onefile \
+  --add-binary "/usr/lib/x86_64-linux-gnu/libpython3.10.so.1.0:." \
+  --hidden-import=tkinter \
+  --collect-submodules=tkinter \
+  --collect-all PIL
 
 ---
 
