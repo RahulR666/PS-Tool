@@ -68,9 +68,8 @@ pyinstaller GUI_tool.py \
   --collect-submodules=tkinter \
   --collect-all PIL
 
----
-
 ```
+---
 ##  Platform Packaging Notes
 
 ###  Windows
