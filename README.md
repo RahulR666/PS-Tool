@@ -8,8 +8,6 @@ A robust desktop GUI tool for pre-selecting and labeling images with scene-based
 
 -  Zoom and drag to explore images
 -  Dark/Light mode toggle
--  Attribute tagging (class, action, accessories, age, gender, distance, time, occlusion)
--  Empty Frame disables irrelevant fields automatically
 -  Folder navigation with search
 -  Auto CSV logging and undo support
 -  Save selections with metadata for dataset preparation
