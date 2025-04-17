@@ -78,11 +78,9 @@ class FolderNavigator:
             new_path = os.path.join(self.current_path, selection)
 
         if os.path.exists(new_path) and os.path.isdir(new_path):
-            # 👇 Call the main app's folder load method
-            self.on_folder_change(new_path)
-
-            # 👇 Update sidebar list to reflect new folder
-            self.load(new_path)
+            self.current_path = new_path  # ✅ ensure internal path state updates
+            self.on_folder_change(new_path)  # 👈 calls back to main GUI to load images
+            self.load(new_path)  # 👈 refresh sidebar list based on new path
 
 
 
@@ -294,6 +292,11 @@ class ImageSelectorGUI:
         scrollbar = tk.Scrollbar(self.log_frame, command=self.log_output.yview)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y, pady=(5, 10))
         self.log_output['yscrollcommand'] = scrollbar.set
+        self.root.bind("<Left>", lambda e: self.previous_image())
+        self.root.bind("<Right>", lambda e: self.next_image())
+        self.root.bind("<s>", lambda e: self.select_image())
+        self.root.bind("<S>", lambda e: self.select_image())  # capital S
+        self.root.bind("<u>", lambda e: self.undo_last_selection())
 
         self.apply_theme()
         print("✅ setup_ui completed!")
