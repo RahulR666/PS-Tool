@@ -268,6 +268,10 @@ class ImageSelectorGUI:
         self.zoom_out_btn = tk.Button(btn_frame, text="🔍➖", command=lambda: self.zoom_image(0.9))
         self.zoom_out_btn.pack(side=tk.LEFT, padx=5)
 
+        self.prev_btn = tk.Button(btn_frame, text="⬅️ Previous", command=self.previous_image)
+        self.prev_btn.pack(side=tk.LEFT, expand=True, fill=tk.X, padx=5)
+
+
         self.select_btn = tk.Button(btn_frame, text="✅ Select", command=self.select_image)
         self.select_btn.pack(side=tk.LEFT, expand=True, fill=tk.X, padx=5)
 
@@ -358,9 +362,13 @@ class ImageSelectorGUI:
             self.log_info("No images found in this folder.")
 
     def reset_attribute_fields(self):
-        self.scene_entry.delete(0, tk.END)
-        self.scene_entry.insert(0, "Enter scene ID or leave blank")
-
+        # try:
+        #     if self.scene_entry and self.scene_entry.winfo_exists():
+        #         self.scene_entry.delete(0, tk.END)
+        #         self.scene_entry.insert(0, "Enter scene ID or leave blank")
+        # except Exception as e:
+        #     self.log_error(f"⚠️ Could not reset scene entry: {e}")
+        pass
 
     def show_image(self):
         if self.current_index >= len(self.image_paths):
@@ -497,6 +505,18 @@ class ImageSelectorGUI:
 
     def update_attribute_states(self, *args):
         pass  # Attributes removed; this is now a no-op
+
+    def previous_image(self):
+        self.zoom_level = 1.0
+        self.image_offset = (0, 0)
+
+        if self.current_index > 0:
+            self.current_index -= 1
+            self.reset_attribute_fields()  # Will do nothing now but safe
+            self.show_image()
+            self.log_info(f"⬅️ Moved to previous image: {os.path.basename(self.image_paths[self.current_index])}")
+        else:
+            self.log_info("🔹 Already at the first image.")
 
 
     def next_image(self):
