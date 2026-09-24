@@ -194,26 +194,6 @@ The exact columns depend on the configuration and labeling workflow used by the 
 
 ---
 
-## Demo
-
-<!-- ADD APPLICATION SCREENSHOT HERE -->
-
-Future additions can include:
-
-- main application interface
-- image review window
-- metadata selection panel
-- zoomed image example
-- CSV output example
-
-Example:
-
-```markdown
-![Dataset Curation Tool](results/application_interface.png)
-```
-
----
-
 ## Packaging as a Desktop Application
 
 The application can be packaged into a standalone executable using PyInstaller.
