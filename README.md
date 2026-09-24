@@ -1,4 +1,4 @@
-#  DeepTerrainAI IPS-Tool
+#  IPS-Tool
 
 A robust desktop GUI tool for pre-selecting and labeling images with scene-based attributes. Built with Python and Tkinter, this app streamlines the process of image selection, categorization, and dataset generation.
 
